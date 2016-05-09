@@ -24,20 +24,5 @@ public class Writer{
             e1.printStackTrace();
         }
     }
-    public static void main (String[] args){
-        Employee e = new Employee();
 
-        e.setName("lhy");
-        e.setDesc("Manager");
-        e.setDepartment("Finance");
-
-        XStream xs = new XStream();
-
-        try {
-            FileOutputStream fs = new FileOutputStream("/Users/xuhaitao/lhydev/ideaspace/learnxml/temp/employdata.xml");
-            xs.toXML(e, fs);
-        } catch (FileNotFoundException e1) {
-            e1.printStackTrace();
-        }
-    }
 }

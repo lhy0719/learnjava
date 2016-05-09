@@ -26,19 +26,5 @@ public class Reader {
             ex.printStackTrace();
         }
     }
-    public static void main(String[] args) {
-        XStream xs = new XStream(new DomDriver());
-        Employee e = new Employee();
 
-        try {
-            FileInputStream fis = new FileInputStream("/Users/xuhaitao/lhydev/ideaspace/learnxml/temp/employdata.xml");
-            xs.fromXML(fis, e);
-
-            System.out.println(e.toString());
-
-        } catch (FileNotFoundException ex) {
-            ex.printStackTrace();
-        }
-
-    }
 }
